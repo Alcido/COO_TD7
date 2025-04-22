@@ -2,12 +2,24 @@
 
 public class Television implements ElectronicObject{
 
+    //attribut permettant de savoir si la télé est allumé, si oui alors image vaut True, false sinon
+    private boolean image;
+    private int son = 0;
+
+
     public void allumer(){
-        System.out.println("Allumer");
+        image = true;
+        son = 0;
     }
 
     public void eteindre(){
-        System.out.println("Eteindre");
+        image = false;
+        son = 0;
     }
+
+    public void setSon(int s){
+        son = s;
+    }
+
 
 }
