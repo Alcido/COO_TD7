@@ -49,4 +49,10 @@ public class Telecommande {
         }
         return s.toString();
     }
+
+    //ici on voit qu'avec une interface SoundObject on pourrait modifier tout objet implémentant cette interface
+    public void modifSon(int s,ElectronicObject objet) {
+        if (objet instanceof Television) ((Television)objet).setSon(s);
+    }
+
 }

@@ -24,7 +24,6 @@ class Hifi implements ElectronicObject{
 	 */
 	public void eteindre() {
 		this.son = 0;
-
 	}
 
 	/**
